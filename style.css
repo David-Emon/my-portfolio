@@ -718,7 +718,7 @@ margin-right: 50px;
     animation: javascript 2s;
 }
 .skill-bar .bar .tailwind{
-    width: 81%;
+    width: 79%;
     animation: tailwind 2s;
 }
 .skill-bar .bar .python{
@@ -759,7 +759,7 @@ margin-right: 50px;
         width: 0%;
     }
     100%{
-       width: 81%;
+       width: 79%;
     }
 }
 @keyframes python {
@@ -799,7 +799,7 @@ margin-right: 50px;
     content: "51%";
 }
 .skill-bar .bar .tailwind::after{
-    content: "81%";
+    content: "79%";
 }
 .skill-bar .bar .python::after{
     content: "47%";
