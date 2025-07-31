@@ -634,16 +634,10 @@ margin-right: 50px;
     text-transform: capitalize;
     z-index: 11;
 }
-
-
-
-
-
-
-
 /* skill section------------------ */
 .skill{
     border-top: 2px solid var(--secon-bg-color);
+    margin-bottom: 4rem;
 }
 .skill .main-text{
     width: 100%;
@@ -658,7 +652,7 @@ margin-right: 50px;
 }
 .skill .main-text h2{
     text-align: center;
-    margin-bottom: 5rem;
+    margin-bottom: 2rem;
     color: var(--text-color);
     font-weight: 700;
     font-size: 3.2rem;
@@ -723,6 +717,10 @@ margin-right: 50px;
     width: 51%;
     animation: javascript 2s;
 }
+.skill-bar .bar .tailwind{
+    width: 81%;
+    animation: tailwind 2s;
+}
 .skill-bar .bar .python{
     width: 47%;
     animation: python 2s;
@@ -754,6 +752,14 @@ margin-right: 50px;
     }
     100%{
        width: 51%;
+    }
+}
+@keyframes tailwind {
+    0%{
+        width: 0%;
+    }
+    100%{
+       width: 81%;
     }
 }
 @keyframes python {
@@ -791,6 +797,9 @@ margin-right: 50px;
 }
 .skill-bar .bar .javascript::after{
     content: "51%";
+}
+.skill-bar .bar .tailwind::after{
+    content: "81%";
 }
 .skill-bar .bar .python::after{
     content: "47%";
