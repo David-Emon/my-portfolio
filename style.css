@@ -6,6 +6,9 @@
     scroll-behavior: smooth;
     text-decoration: none;
 }
+body{
+        overflow-x: hidden;
+    }
 :root{
     --text-color:#f5f5f5;
     /* --hover-color:#12f7ff; */
@@ -101,6 +104,10 @@ span{
     0 0 100px rgba(18,247,255,0.3),
     0 0 150px rgba(18,247,255,0.3); */
 
+}
+.navlist a.active{
+    color:var(--hover-color);
+    
 }
 .navlist li::before{
     content: "";
@@ -584,10 +591,7 @@ margin-right: 50px;
     }
 }
 .service-box:nth-child(1){
-    background:linear-gradient( #6fe16f  , #142814);
-    z-index: 111;
-    
-    
+    background:linear-gradient( #6fe16f  , #142814); 
 }
 .service-box:nth-child(2){
     background: linear-gradient(#8c7ae6,#18142a);
@@ -1047,4 +1051,84 @@ margin-right: 50px;
 .footer .copyright{
     text-align: center;
     margin-top: 30px;
+}
+
+@media (max-width:991px){
+    header{
+        padding: 15px 5%;
+    }
+    footer{
+        padding: 15px 5%;
+    }
+    section{
+        padding: 50px 5%;
+    }
+    .navlist a{
+        padding:8px 15px;
+    }
+    :root{
+    --big-font:2.2rem;
+    --normal-font:1rem;
+    --neon-box-shadow:0 0 .5rem#54a0ff;
+    --h2-font:2.7rem;
+    }
+    .home-content{
+        margin-top: 1rem;
+    }
+    .social-icons{
+        margin-top: 2rem;
+    }
+    .info-card{
+        width:auto;
+        margin-right: 5px;
+    }
+    .info-card h1{
+        font-size: 1.7rem;
+    }
+    .testimonials-item p{
+    font-size: 0.65rem;
+    }
+}
+@media(max-width:768px){
+    #menu-icon{
+        display: block;
+        transition: all .4s ease;
+    }
+    #menu-icon.bx-x{
+        transform: rotate(-180deg);
+    }
+    .navlist{
+        display:flex;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: -1000px;
+        flex-direction: column;
+        background: var(--bg-color);
+        text-align: left;
+        padding: 1.5rem 5%;
+        transition: all .5s ease;
+    }
+    .navlist a{
+        display: block;
+        padding-bottom:1rem;
+        font-size: 1rem;
+    }
+    .navlist.open{
+        top: 100%;
+        width: 100%;
+    }
+    .home{
+        grid-template-columns: 1fr;
+    }
+    .home-image img{
+        margin-bottom: 4rem;
+        width: 300px;
+        height: 300px;
+    }
+    .about{
+        flex-direction: column-reverse;
+    }
+
+
 }
